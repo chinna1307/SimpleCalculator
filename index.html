@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button id="clear" onclick="clearDisplay()" class="operator">C</button>
+            <button id="backspace" onclick="backspace()" class="operator">⌫</button>
+            <button id="divide" onclick="appendToDisplay('/')" class="operator">/</button>
+            <button id="multiply" onclick="appendToDisplay('*')" class="operator">*</button>
+            
+            <button id="seven" onclick="appendToDisplay('7')">7</button>
+            <button id="eight" onclick="appendToDisplay('8')">8</button>
+            <button id="nine" onclick="appendToDisplay('9')">9</button>
+            <button id="subtract" onclick="appendToDisplay('-')" class="operator">-</button>
+
+            <button id="four" onclick="appendToDisplay('4')">4</button>
+            <button id="five" onclick="appendToDisplay('5')">5</button>
+            <button id="six" onclick="appendToDisplay('6')">6</button>
+            <button id="add" onclick="appendToDisplay('+')" class="operator">+</button>
+            
+            <button id="one" onclick="appendToDisplay('1')">1</button>
+            <button id="two" onclick="appendToDisplay('2')">2</button>
+            <button id="three" onclick="appendToDisplay('3')">3</button>
+            <button id="equals" onclick="calculateResult()" class="equals">=</button>
+
+            <button id="zero" onclick="appendToDisplay('0')">0</button>
+            <button id="decimal" onclick="appendToDisplay('.')">.</button>
+        </div>
+    </div>
+    <script src="Calculator.js"></script>
+</body>
+</html>
