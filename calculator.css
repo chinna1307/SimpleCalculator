@@ -1,4 +1,4 @@
-/* This defines your custom font and gives it a name */
+
 @font-face {
     font-family: 'CalculatorFont';
     src: url('dseg7-classic-latin-300-normal.ttf'); 
@@ -108,3 +108,4 @@ button:active {
 }
 
 #decimal { grid-area: decimal; }
+
