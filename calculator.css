@@ -1,7 +1,7 @@
 /* This defines your custom font and gives it a name */
 @font-face {
     font-family: 'CalculatorFont';
-    src: url('dseg7-classic-latin-300-normal.ttf'); /* Your exact font file name */
+    src: url('dseg7-classic-latin-300-normal.ttf'); 
 }
 
 body {
@@ -19,19 +19,19 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     overflow: hidden;
-    width: 360px; /* Increased size */
+    width: 360px; 
     background-color: #3a3f47;
 }
 
 #display {
     width: 100%;
-    height: 90px; /* Increased size */
+    height: 90px; 
     border: none;
     background-color: #1c1f24;
     color: #ffffff;
     text-align: right;
-    padding: 0 25px; /* Increased padding */
-    font-size: 3.5em; /* Increased size */
+    padding: 0 25px; 
+    font-size: 3.5em;
     box-sizing: border-box;
     outline: none;
     font-family: 'CalculatorFont', sans-serif;
@@ -39,7 +39,7 @@ body {
 
 .buttons {
     display: grid;
-    /* Updated grid layout to include the backspace button */
+  
     grid-template-areas: 
         "clear backspace divide multiply"
         "seven eight nine subtract"
@@ -51,9 +51,9 @@ body {
 }
 
 button {
-    min-height: 80px; /* Increased size */
+    min-height: 80px;
     border: none;
-    font-size: 2em; /* Increased size */
+    font-size: 2em; 
     cursor: pointer;
     background-color: #4c525f;
     color: #ffffff;
@@ -85,7 +85,7 @@ button:active {
     background-color: #388e3c;
 }
 
-/* Assigning each button to its area in the grid */
+
 #clear { grid-area: clear; }
 #backspace { grid-area: backspace; }
 #divide { grid-area: divide; }
@@ -106,4 +106,5 @@ button:active {
     grid-area: zero;
     border-bottom-left-radius: 15px;
 }
+
 #decimal { grid-area: decimal; }
